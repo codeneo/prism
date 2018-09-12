@@ -51,7 +51,7 @@ A possible greedy approach would be to start at the left most index and take the
 - For our base case, the last index, the reward would be 0 since there is no way to go forward.
 - For the second last index, the reward would be 1 + reward of the last index if their difference is above the threshold as defined above.
 - In general we can say that:
-  - **R[ i ]** = 1 + **argmax( R[ j ] )**
+  - **R[ i ]** = 1 + **max( R[ j ] )**
   - where **R[ i ]** is the reward for node **i** satisfying the above conditions.
 
 - Using this rule we can find the rewards for all the nodes and return the maximum reward.
